@@ -53,18 +53,20 @@ Our worst possible regression model could be the baseline model itself. In that 
 
 Due to this particular relationship between $x$ and $y$, the regression line $\hat y$ is the same as the mean line for $\overline y$. The R-Squared for this model is 0. It's clear that a straight line is probably not the right fit for this data.
 
-On the other extreme, the best model could also be one that fits all the data points perfectly. Because the unexplained part of the variation is 0, R-Squared is 1–0, so 1 in this case, which indicates a perfect model. Below is an example of this (know that this will rarely happen with real world data).
+On the other extreme, the best model could also be one that fits all the data points perfectly. When the unexplained part of the variation is 0, the R-Squared is 1. Below is an example of this (know that this will rarely happen with real world data).
 
 
 <img src="images/rs6.png" width="500">
 
-> **R-Squared can take a value between 0 and 1 where values closer to 0 represent a poor fit and values closer to 1 represent an (almost) perfect fit**
+> **In linear regression, R-Squared can take a value between 0 and 1 where values closer to 0 represent a poor fit and values closer to 1 represent an (almost) perfect fit**
+
+Note that, beyond linear regression, the R-Squared can be negative if a model's predictions are worse than the baseline. 
 
 ### Phrasing R-Squared values 
 
-An R-squared value of say 0.85 can be described conceptually as: 
+For example, an R-squared value of 0.85 from a linear regression can be described conceptually as: 
 
 > ***85% of the variations in dependent variable $y$ are explained by the independent variable in our model.***
 
 ## Summary 
-In this lesson, you looked at the R-Squared, or the Coefficient of Determination to evaluate the goodness of fit for a regression line. You saw how R-Squared is calculated by comparing a given model to a baseline model and learned that it must be a value between 0 and 1. In the next lab, you'll move on to calculating R-Squared in Python. 
+In this lesson, you looked at the R-Squared, or the Coefficient of Determination to evaluate the goodness of fit for a regression line. You saw how R-Squared is calculated by comparing a given model to a baseline model and learned that it must be a value between 0 and 1 in linear regression. In the next lab, you'll move on to calculating R-Squared in Python. 
